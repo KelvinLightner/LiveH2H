@@ -22,9 +22,15 @@
         <a-asset-item id="osl-obj" src="models/outsidelands.obj"></a-asset-item>
         <a-asset-item id="osl-mtl" src="models/outsidelands.mtl"></a-asset-item>
         <img id="grass" src="img/grass.jpg">
-        <img id="rhead" src="img/rhead.jpg">
+
+        <img id="h2hlearn" src="img/h2hLearn.jpg">
+        <img id="h2hshare" src="img/h2hShare.jpg">
+        <img id="h2hjobs" src="img/h2hJobs.jpg">
+
+<!--         <img id="rhead" src="img/rhead.jpg">
         <img id="lcd" src="img/lcd.jpg">
-        <img id="lana" src="img/lana.jpg">
+        <img id="lana" src="img/lana.jpg"> -->
+
         <a-mixin id="album" material="opacity: 0.6"
                  animation__mouseenter="startEvents: mouseenter; property: scale;
                                         to: 1.2 1.2 1.2"
@@ -39,12 +45,14 @@
         
         <video autoplay id="liveh2hJobs1" src="video/liveh2hJobs1.mp4"></video>
         <video id="liveh2hLearn" preload="none" src="video/liveh2hLearn.mp4"></video>
+        <video id="liveh2hShare" preload="none" src="video/liveh2hShare.mp4"></video>
+
 <!--         <video autoplay muted id="daydreamingVid" src="video/daydreaming.mp4"></video>
         <video autoplay muted id="daydreamingTall" src="video/daydreaming-tall.mp4"></video> -->
-        <video id="danceVid" preload="none" muted src="video/dance.mp4"></video>
+<!--         <video id="danceVid" preload="none" muted src="video/dance.mp4"></video>
         <video id="danceTall" preload="none" muted src="video/dance-tall.mp4"></video>
         <video id="summertimeVid" preload="none" muted src="video/summertime.mp4"></video>
-        <video id="summertimeTall" preload="none" muted src="video/summertime-tall.mp4"></video>
+        <video id="summertimeTall" preload="none" muted src="video/summertime-tall.mp4"></video> -->
       </a-assets>
 
       <!-- Side videos. -->
@@ -80,30 +88,24 @@
       <a-entity animation="property: position; dir: alternate; dur: 2000;
                            loop: true; to: 0 0.02 0; stopEvents: click" position="0 0 -0"
                 animation__2="property: scale; startEvents: click; to: 0 0 0">
-        <a-curvedimage mixin="album" src="#rhead" position="-1 1 2" radius="4"
-                       play-audio="src: #rhead"
-                       play-video="target: #video; src: #daydreamingVid"
-                       play-video__2="target: #leftVideo; src: #daydreamingTall"
-                       play-video__3="target: #rightVideo; src: #daydreamingTall"
-                       event-set="_event: click; _target: #audioViz;
-                                  audio-visualizer.src: #rhead"
+        <a-curvedimage mixin="album" src="#h2hjobs" position="-1 1 2" radius="4"
+                       play-video="target: #video; src: #liveh2hJobs1"
+                       play-video__2="target: #leftVideo; src: #liveh2hJobs1"
+                       play-video__3="target: #rightVideo; src: #liveh2hJobs1"
+                       event-set="_event: click; _target: #audioViz"
                        theta-length="15" rotation="0 180 0"
         ></a-curvedimage>
-        <a-image mixin="album" src="#lcd" position="0 1 -2"
-                 event-set="_event: click; _target: #audioViz;
-                            audio-visualizer.src: #dance"
-                 play-audio="src: #dance"
-                 play-video="target: #video; src: #danceVid"
-                 play-video__2="target: #leftVideo; src: #danceTall"
-                 play-video__3="target: #rightVideo; src: #danceTall"
+        <a-image mixin="album" src="#h2hlearn" position="0 1 -2"
+                 event-set="_event: click; _target: #audioViz"
+                 play-video="target: #video; src: #liveh2hLearn"
+                 play-video__2="target: #leftVideo; src: #liveh2hLearn"
+                 play-video__3="target: #rightVideo; src: #liveh2hLearn"
         ></a-image>
-        <a-curvedimage mixin="album" src="#lana" position="0.6 1 2" radius="4"
-                       event-set="_event: click; _target: #audioViz;
-                                  audio-visualizer.src: #ss"
-                       play-audio="src: #ss"
-                       play-video__1="target: #video; src: #summertimeVid"
-                       play-video__2="target: #leftVideo; src: #summertimeTall"
-                       play-video__3="target: #rightVideo; src: #summertimeTall"
+        <a-curvedimage mixin="album" src="#h2hshare" position="0.6 1 2" radius="4"
+                       event-set="_event: click; _target: #audioViz"
+                       play-video__1="target: #video; src: #liveh2hShare"
+                       play-video__2="target: #leftVideo; src: #liveh2hShare"
+                       play-video__3="target: #rightVideo; src: #liveh2hShare"
                        theta-length="15" rotation="0 160 0"></a-curvedimage>
       </a-entity>
 
