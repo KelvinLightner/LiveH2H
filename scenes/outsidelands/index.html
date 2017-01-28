@@ -33,12 +33,14 @@
         <a-mixin id="bar"
                  geometry="primitive: box" material="color: black; opacity: 0.8"
                  scale-y-color="from: 30 30 30; to: 230 230 230; maxScale: 10"></a-mixin>
-        <audio id="daydream" autoplay src="audio/daydream.mp3"></audio>
+        <!-- <audio id="daydream" autoplay src="audio/daydream.mp3"></audio> -->
         <audio id="dance" preload="none" src="audio/dance.mp3"></audio>
         <audio id="ss" preload="none" src="audio/ss.mp3"></audio>
-
-        <video autoplay muted id="daydreamingVid" src="video/daydreaming.mp4"></video>
-        <video autoplay muted id="daydreamingTall" src="video/daydreaming-tall.mp4"></video>
+        
+        <video autoplay id="liveh2hJobs1" src="video/liveh2hJobs1.mp4"></video>
+        <video id="liveh2hLearn" preload="none" src="video/liveh2hLearn.mp4"></video>
+<!--         <video autoplay muted id="daydreamingVid" src="video/daydreaming.mp4"></video>
+        <video autoplay muted id="daydreamingTall" src="video/daydreaming-tall.mp4"></video> -->
         <video id="danceVid" preload="none" muted src="video/dance.mp4"></video>
         <video id="danceTall" preload="none" muted src="video/dance-tall.mp4"></video>
         <video id="summertimeVid" preload="none" muted src="video/summertime.mp4"></video>
@@ -46,10 +48,10 @@
       </a-assets>
 
       <!-- Side videos. -->
-      <a-video id="leftVideo" src="#daydreamingTall" height="15.2" width="8"
-               position="-14 10.8 -10.5" side="front"></a-video>
-      <a-video id="rightVideo" src="#daydreamingTall" height="15.2" width="8"
-               position="14 10.8 -10.5" side="front"></a-video>
+      <a-video id="leftVideo" src="#liveh2hJobs1" height="16.5" width="11"
+               position="-16 10.8 -10.5" side="front"></a-video>
+      <a-video id="rightVideo" src="#liveh2hJobs1" height="16.5" width="11"
+               position="16 10.8 -10.5" side="front"></a-video>
 
       <!-- Stage. -->
       <a-entity obj-model="obj: #osl-obj; mtl: #osl-mtl"
@@ -57,14 +59,14 @@
 
       <!-- On-stage audio visualization. -->
       <a-entity position="0 2 -17">
-        <a-entity id="audioViz"
+  <!--       <a-entity id="audioViz"
                   audio-visualizer="src: #daydream ;smoothingTimeConstant: 0.9"
                   audio-visualizer-spectrum-scale="max: 50; multiplier: 0.06"
                   entity-generator="mixin: bar; num: 200"
                   layout="type: circle; radius: 4.5"
-                  rotation="0 135 0"></a-entity>
+                  rotation="0 135 0"></a-entity> -->
         <!-- Video. -->
-        <a-video id="video" src="#daydreamingVid" height="17" width="24" side="front"
+        <a-video id="video" src="#liveh2hJobs1" height="17" width="24" side="front"
                  position="0 7 -6"></a-video>
         <!-- Stage light.-->
         <a-light type="point" decay="2" distance="35" intensity="0.5"
