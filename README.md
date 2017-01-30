@@ -4,7 +4,7 @@
 
 Kelvin's collection of A-Frame components and scenes.
 
-[VIEW DEMOS](https://ngokevin.github.io/kframe/)
+[VIEW DEMOS](http://kelvin-lightner.com/LiveH2H/)
 
 ## Components
 
