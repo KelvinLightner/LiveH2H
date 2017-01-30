@@ -16,3 +16,9 @@ Stack: Javascript, A-Frame, Firebase API, Speech Pattern Recognition API, LIVEH2
 
 [VIEW DEMOS](http://kelvin-lightner.com/LIVEH2H-VR/)
 
+-----------------------------
+Team:
+[Christian Acuna](https://www.linkedin.com/in/christian-acuna)
+[Kelvin Lightner](https://www.linkedin.com/in/kelvin-lightner)
+[Laura Reynolds](https://www.linkedin.com/in/lrrnlds)
+[Alex Min](https://www.linkedin.com/in/alex-min)
