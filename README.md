@@ -2,7 +2,7 @@
 
 ![kframe](https://cloud.githubusercontent.com/assets/674727/15790659/69860590-2987-11e6-9511-65c28e583c6f.png)
 
-Kevin's collection of A-Frame components and scenes.
+Kelvin's collection of A-Frame components and scenes.
 
 [VIEW DEMOS](https://ngokevin.github.io/kframe/)
 
